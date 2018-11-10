@@ -76,6 +76,5 @@ Shader "ShaderLib/Distortion"
 			ENDCG
 		}
 	}
-
-	Fallback "GG Shader/Color"
+	// Add Fallback
 }
