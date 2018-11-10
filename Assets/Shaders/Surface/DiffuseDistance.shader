@@ -6,14 +6,17 @@
 		_Center ("Center", Vector) = (0, 0, 0, 0)
 		_Radius ("Radius", Float) = 0.5
 	}
+	
 	SubShader
 	{
 		Tags
 		{
+		    "Queue" = "Geometry"
 		    "RenderType" = "Opaque"
 		}
 		
 		CGPROGRAM
+		// Uses the Lambertian lighting model
 		#pragma surface surf Lambert
 		
 		struct Input
@@ -36,7 +39,6 @@
 			else
 				o.Albedo = tex2D (_MainTex, IN.uv_MainTex).rgb;
 		}
-
 		ENDCG
 	} 
 	Fallback "Diffuse"
