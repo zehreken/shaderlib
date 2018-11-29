@@ -19,7 +19,7 @@
         
         void surf(Input IN, inout SurfaceOutput o)
         {
-            o.Albedo = float4(1, 0, 0, 0);
+            o.Albedo = half4(1, 1, 1, 1).rgb;
         }
         ENDCG
     }
