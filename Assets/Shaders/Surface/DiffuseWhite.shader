@@ -4,7 +4,6 @@
     {
         Tags
         {
-            "Queue" = "Geometry"
             "RenderType" = "Opaque"
         }
         
